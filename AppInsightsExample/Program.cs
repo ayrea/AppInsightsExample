@@ -10,7 +10,6 @@ builder.Services.AddApplicationInsightsTelemetry(options =>
     options.DeveloperMode = true;
 });
 
-builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSingleton<ITelemetryInitializer, CorrelationIdTelemetryInitializer>();
 
 builder.Services.AddControllers();

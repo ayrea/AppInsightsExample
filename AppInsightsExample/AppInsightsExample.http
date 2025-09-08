@@ -1,0 +1,6 @@
+@AppInsightsExample_HostAddress = http://localhost:5285
+
+GET {{AppInsightsExample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
